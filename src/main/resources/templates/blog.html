@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Tecnología - Spring Boot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #79c2d0;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 10px;
+            background-color: #333;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido al Blog de Alejandro sobre Spring Boot</h1>
+</header>
+
+<nav>
+    <a th:href="@{/login}">Inicio</a>
+    <a href="#">Sobre Nosotros</a>
+    <a href="#">Artículos</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<div class="container">
+    <h2>¿Qué es Spring Boot?</h2>
+    <p>
+        Spring Boot es un framework que facilita la creación de aplicaciones Java basadas en Spring. Su principal objetivo es simplificar el desarrollo al eliminar la necesidad de configuración manual y ofrecer una serie de herramientas preconfiguradas.
+    </p>
+    <h2>Ventajas de usar Spring Boot</h2>
+    <p>
+        Una de las principales ventajas de Spring Boot es su capacidad para generar proyectos listos para producción sin configuraciones complejas. Además, permite crear aplicaciones independientes con servidores integrados como Tomcat o Jetty, lo que hace más sencillo su despliegue.
+    </p>
+    <h2>Cómo empezar con Spring Boot</h2>
+    <p>
+        Para empezar a desarrollar con Spring Boot, puedes utilizar Spring Initializr, una herramienta online que te permite generar el esqueleto de tu aplicación seleccionando los componentes necesarios, como bases de datos, seguridad, o servidores web.
+    </p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Blog de Tecnología - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
